@@ -4,18 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-  </head>
-  <body>
     <style>
       body {
         margin: 50px;
-        background-color: rgb(0, 0, 0);
+        background-color: #fffcf2;
         color: #fff;
       }
       .card {
         display: flex;
         border-radius: 10px;
-        background-color: #14213d;
+        background-color: #403d39;
         text-align: center;
         align-items: center;
       }
@@ -23,9 +21,9 @@
         display: flex;
         flex-direction: column;
       }
-    
+
       .img-container {
-        padding: 40px;
+        padding: 20px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -53,44 +51,54 @@
       .card-links {
         display: flex;
         flex-direction: column;
-        padding: 10px; 
+        padding: 10px;
         gap: 10px;
         margin: 10px;
       }
       a {
-        background-color: #fca311;
+        background-color: #eb5e28;
         border-radius: 20px;
         padding: 10px;
         text-align: center;
         text-decoration: none;
-        color: #14213d;
+        color: #252422;
       }
-      a:hover{
+      a:hover {
         background-color: #fff;
-        transition: .2s ease-in-out;
+        transition: 0.2s ease-in-out;
       }
-      .table-container{
+      .table-container {
         display: flex;
-        flex-direction: column ;
+        flex-direction: column;
         justify-content: center;
         margin-top: 20px;
         margin-bottom: 20px;
         padding: 10px;
       }
-      table {
+      table,
+      th,
+      td {
         border: 1px solid;
         letter-spacing: 1px;
         border-collapse: collapse;
         margin: 20px;
+        background-color: #ccc5b9;
+        color: #252422;
       }
-      td,
-      tr {
-        border: 1px solid;
+      th,
+      td {
+        padding: 10px;
+        text-align: start;
+      }
+      th {
+        background-color: #a49986;
       }
     </style>
-
+  </head>
+  <body>
     <section class="card">
       <div class="card-container">
+        <h3>Tarjeta de Presentacion</h3>
         <div class="img-container">
           <img src="media/me.png" alt="" />
         </div>
@@ -113,19 +121,39 @@
         </article>
 
         <article class="table-container">
-          <h3>Tabla</h3>
+          <h3>Destrezas y Habilidades</h3>
           <table>
             <tr>
-              <th>Head 1</th>
-              <th>Head 1</th>
+              <th>Habilidad / Destreza</th>
+              <th>Nivel</th>
+              <th>Descripcion</th>
             </tr>
             <tr>
-              <td>Hoal</td>
-              <td>Hola 2</td>
+              <td>HTML</td>
+              <td>Básico</td>
+              <td>Conocimiento inicial de etiquetas, estructura y sintaxis.</td>
+            </tr>
+            <tr>
+              <td>CSS</td>
+              <td>Básico</td>
+              <td>
+                Capacidad de estilizar páginas web usando selectores y
+                propiedades fundamentales.
+              </td>
+            </tr>
+            <tr>
+              <td>JavaScript</td>
+              <td>Principiante</td>
+              <td>Familiaridad con conceptos básicos como variables, funciones y eventos.
+              </td>
+            </tr> <tr>
+              <td>Versionamiento (Git)	</td>
+              <td>Principiante	</td>
+              <td>Uso básico de Git para seguimiento de cambios en proyectos.
+              </td>
             </tr>
           </table>
         </article>
-
       </div>
     </section>
   </body>
