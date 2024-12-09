@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <style>
+      body {
+        margin: 50px;
+        background-color: rgb(0, 0, 0);
+        color: #fff;
+      }
+      .card {
+        display: flex;
+        border-radius: 10px;
+        background-color: #14213d;
+        text-align: center;
+        align-items: center;
+      }
+      .card-container {
+        display: flex;
+        flex-direction: column;
+      }
+    
+      .img-container {
+        padding: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      img {
+        width: 200px;
+        border-radius: 50%;
+      }
+      .card-info {
+        padding: 18px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+      h3 {
+        margin: 10px;
+      }
+      p {
+        margin: 0;
+      }
+      li {
+        list-style: none;
+      }
+      .card-links {
+        display: flex;
+        flex-direction: column;
+        padding: 10px; 
+        gap: 10px;
+        margin: 10px;
+      }
+      a {
+        background-color: #fca311;
+        border-radius: 20px;
+        padding: 10px;
+        text-align: center;
+        text-decoration: none;
+        color: #14213d;
+      }
+      a:hover{
+        background-color: #fff;
+        transition: .2s ease-in-out;
+      }
+      .table-container{
+        display: flex;
+        flex-direction: column ;
+        justify-content: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding: 10px;
+      }
+      table {
+        border: 1px solid;
+        letter-spacing: 1px;
+        border-collapse: collapse;
+        margin: 20px;
+      }
+      td,
+      tr {
+        border: 1px solid;
+      }
+    </style>
+
+    <section class="card">
+      <div class="card-container">
+        <div class="img-container">
+          <img src="media/me.png" alt="" />
+        </div>
+
+        <article class="card-info">
+          <h3>¿Quien soy?</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae
+            nesciunt optio delectus quas, quae voluptate provident itaque
+            facilis explicabo iste repellendus culpa nobis sequi, cumque enim
+            voluptas est necessitatibus aliquid.
+          </p>
+        </article>
+
+        <article class="card-links">
+          <a href="#">Facebook</a>
+          <a href="#">Github</a>
+          <a href="#">Youtube</a>
+          <a href="#">Instagram</a>
+        </article>
+
+        <article class="table-container">
+          <h3>Tabla</h3>
+          <table>
+            <tr>
+              <th>Head 1</th>
+              <th>Head 1</th>
+            </tr>
+            <tr>
+              <td>Hoal</td>
+              <td>Hola 2</td>
+            </tr>
+          </table>
+        </article>
+
+      </div>
+    </section>
+  </body>
+</html>
