@@ -1,0 +1,233 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pagina de practica</title>
+  </head>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #f2e8cf;
+    }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid;
+      box-shadow: 1px 1px 1px 1px rgb(0, 0, 0, 20%);
+      padding: 10px 60px;
+    }
+    ul {
+      display: flex;
+    }
+    li {
+      list-style: none;
+    }
+    a {
+      text-decoration: none;
+      color: #000;
+      padding: 8px;
+      font-size: 14px;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  
+    .input-container {
+      display: flex;
+      align-items: center;
+    }
+    input {
+      background-color: transparent;
+      font-style: italic;
+      width: 100%;
+      padding: 8px;
+      outline: none;
+      outline-width: 0px;
+      height: 30px;
+      border-top: none;
+      border-left: none;
+      border-right: none;
+    }
+    section {
+      display: flex;
+    }
+    .block {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      justify-content: center;
+      background-color: #ddd0d0;
+      padding: 20px;
+      border-radius: 10px;
+      position: relative;
+    }
+    .card {
+      border: 1px solid;
+      margin: 50px;
+      border-radius: 10px;
+      box-shadow: 12px 10px;
+      transition: 0.2s ease-in;
+    }
+    .card:hover {
+      transform: scale(1.03);
+      transition: 0.3s ease-in;
+    }
+    .date {
+      font-size: 12px;
+      color: #00000065;
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      font-style: italic;
+    }
+    .author {
+      margin: 0;
+      padding: 0;
+      font-size: 14px;
+    }
+    aside {
+      width: 50%;
+      border-left: 1px solid;
+      padding: 18px;
+    }
+    .aside-article {
+      margin-right: 30px;
+      padding: 10px;
+      background-color: #ddd0d0;
+      border-radius: 10px;
+      box-shadow: 12px 10px;
+      border: 1px solid;
+      position: absolute;
+    }
+    .article-btn {
+      border: 1px solid;
+      width: 100%;
+      border: none;
+      background-color: #fca311;
+      padding: 8px;
+      border-radius: 10px;
+      box-shadow: 2px 2px;
+    }
+    .article-btn:hover {
+      transform: scale(1.03);
+    }
+    footer {
+      border-top: 1px solid;
+      padding: 20px;
+    }
+    .footer-items {
+      display: block;
+    }
+  </style>
+
+  <body>
+    <nav>
+      <div class="logo-container">
+        <h3>New York Times</h3>
+      </div>
+
+      <div class="input-container">
+        <input type="text" size="60" placeholder="Buscar aticulo..." />
+      </div>
+
+      <div class="menu-items">
+        <ul>
+          <li>
+            <a href="#">Inicio</a>
+          </li>
+          <li>
+            <a href="#">Sobre Nosotros</a>
+          </li>
+          <li>
+            <a href="#">FAQ</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <section>
+      <div>
+        <div class="card">
+          <article class="block">
+            <h1>Titulo de articulo 1</h1>
+            <span class="author"><strong>Autor:</strong> Anonymous</span>
+            <span class="date">Fecha: 26/8/25</span>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Et nobis
+              dolores, quas labore non, dolor, aliquam atque porro voluptate
+              numquam expedita recusandae laudantium accusantium illo excepturi
+              praesentium obcaecati. Cupiditate, distinctio?
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Et nobis
+              dolores, quas labore non, dolor, aliquam atque porro voluptate
+              numquam expedita recusandae laudantium accusantium illo excepturi
+              praesentium obcaecati. Cupiditate, distinctio?
+            </p>
+            <button class="article-btn">Ver mas →</button>
+          </article>
+        </div>
+
+        <div class="card">
+          <article class="block">
+            <h1>Titulo de articulo 1</h1>
+            <span class="author"><strong>Autor:</strong> Anonymous</span>
+            <span class="date">Fecha: 26/8/25</span>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Et nobis
+              dolores, quas labore non, dolor, aliquam atque porro voluptate
+              numquam expedita recusandae laudantium accusantium illo excepturi
+              praesentium obcaecati. Cupiditate, distinctio?
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Et nobis
+              dolores, quas labore non, dolor, aliquam atque porro voluptate
+              numquam expedita recusandae laudantium accusantium illo excepturi
+              praesentium obcaecati. Cupiditate, distinctio?
+            </p>
+            <button class="article-btn">Ver mas →</button>
+          </article>
+        </div>
+
+        <div class="card">
+          <article class="block">
+            <h1>Titulo de articulo 1</h1>
+            <span class="author"><strong>Autor:</strong> Anonymous</span>
+            <span class="date">Fecha: 26/8/25</span>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Et nobis
+              dolores, quas labore non, dolor, aliquam atque porro voluptate
+              numquam expedita recusandae laudantium accusantium illo excepturi
+              praesentium obcaecati. Cupiditate, distinctio?
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Et nobis
+              dolores, quas labore non, dolor, aliquam atque porro voluptate
+              numquam expedita recusandae laudantium accusantium illo excepturi
+              praesentium obcaecati. Cupiditate, distinctio?
+            </p>
+            <button class="article-btn">Ver mas →</button>
+          </article>
+        </div>
+      </div>
+
+      <aside>
+        <h1>Articulos relevantes</h1>
+        <article class="aside-article">
+          <h3>Otro articulo</h3>
+          <span class="date">Fecha: 26/8/25</span>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi...
+          </p>
+          <button class="article-btn">Ver mas →</button>
+        </article>
+      </aside>
+    </section>
+    <footer>
+        <div>
+          <ul class="footer-items">
+            <li>Inicio</li>
+            <li>Contactos</li>
+            <li>Prensa</li>
+          </ul>
+        </div>
+    </footer>
+  </body>
+</html>
